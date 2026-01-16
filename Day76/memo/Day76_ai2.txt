@@ -1,0 +1,46 @@
+# 날씨 API -> 대시보드 생성 -> 현재 프로젝트 폴더에 HTML을 생성
+
+맥락
+ - 나는 날씨 데이터를 가져와서 HTML 대시보드로 시각화 하고싶다
+   현재 작업중인 프로젝트 폴더에 HTML파일을 생성하려고한다.
+
+역할
+ - 당신은 웹 대시보드 구축과 데이터 시각화에 경험이 많은
+   프론트엔드 개발자다.
+
+결과물 
+ - weater.html파일어야한다. 
+
+액션 
+ 1. openweater API를 사용하여 특정 도시(서울)의 
+   오늘 시간대별 기온 데이터를 가져온다. 
+ 2. JSON 데이터를 파싱하여 시간 배열(Labels) 과 온도
+   배열(data)을 생성한다. 
+
+ 3. Chart.js를 사용하여 라인 차트 형태로 시각화하는 HTML을
+   생성한다. 
+
+ 4. 생성된 HTML파일을 weater.html이름으로 현재 프로젝트 
+   폴더에 저장한다. 
+ 5. 저장완료후 파일 경로를 출력한다. 
+
+t 
+ - 친절하고 간결하게 작성한다.
+
+e
+ - 
+ HTML 구조는 다음과 같다:
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<canvas id="tempChart"></canvas>
+<script>
+// labels = ["09시","12시","15시",...]
+// data = [3,5,7,...]
+new Chart(...)
+</script>
+</body>
+</html>
